@@ -20,6 +20,7 @@ public class ContaCorrente {
     public boolean depositar(double quantiaDeposito) { // Passado o paramêtro quantiaDeposito
         if (quantiaDeposito > 0) { // Se a quantiaDeposito for maior que 0
             saldo += quantiaDeposito; // Pega o saldo atual da conta e soma com quantiaDeposito
+            return true; // Retorna true caso tenha dado certo
         }
         return false;
     }
